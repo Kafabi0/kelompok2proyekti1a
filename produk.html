@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Aquarium</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 align="center">Family Aquarium</h1>
+        <a href="#" id="loginBtn">Login</a>
+        <a href="#" id="registerBtn">Register</a>
+        <nav class="navbar bg-body-rgb">
+                <div class="container-fluid justify-content-center"> <!-- Menambahkan kelas container-fluid dan justify-content-center di sini -->
+                    <form class="d-flex"> <!-- Menghapus kelas role=search -->
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="form-floating">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example" onchange="redirectToPage(this.value)">
+                  <option selected disabled>Pilih...</option>
+                  <option value="1">Ikan</option>
+                  <option value="2">Makanan Ikan</option>
+                  <option value="3">Lainnya</option>
+                </select>
+              </div>
+              
+              <script>
+              function redirectToPage(destination) {
+                if (destination === "1") {
+                  window.location.href = "ikan.html";
+                } else if (destination === "2") {
+                  window.location.href = "makananikan.html";
+                } else if (destination === "3") {
+                  window.location.href = "lainnya.html";
+                }
+              }
+              </script>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="Tentangkami.html">Tentang Kami</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="https://maps.app.goo.gl/JZyQjYpKpUGJvCLp6">Lihat lokasi</a></li>
+        </ul>
+    </nav>
+    <h2>Produk Ikan</h2>
+    <main id="home">
+        <section id="products">
+            <div class="product">
+                <img src="arwana.jpg" alt="Ikan arwana">
+                <h3>Arwana</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="ikan koi.jpeg" alt="Ikan komet">
+                <h3>Ikan Komet</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="Aligator.jpeg" alt="Ikan aligator">
+                <h3>Ikan Aligator</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="bawal.jpeg" alt="Ikan bawal">
+                <h3>Ikan Bawal</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="black bass.jpeg" alt="BlackBass">
+                <h3>Ikan black bass</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="ikan glofish.jpeg" alt="Ikan GloFish">
+                <h3>Ikan GloFish</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="ikan louhan.jpg" alt="Ikan Louhan">
+                <h3>Ikan Louhan</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="ikan manfish.jpg" alt="Ikan ManFish">
+                <h3>Ikan Manfish</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="ikan mujair.jpg" alt="Ikan Mujair">
+                <h3>Ikan Mujair</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="Ikan Neon.jpg" alt="Ikan Neon">
+                <h3>Ikan Neon</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="maskoki.png" alt="Ikan Maskoki">
+                <h3>Ikan Mas Koki</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="oscar.jpeg" alt="Ikan Oscar">
+                <h3>Ikan Oscar</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="pikokbas.jpeg" alt="Ikan Pikobas">
+                <h3>Ikan Pikokbass</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="sapusapu.jpg" alt="Ikan Sapu-Sapu">
+                <h3>Ikan Sapu-Sapu</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="lele.jpg" alt="Ikan Lele">
+                <h3>Ikan Lele</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            
+
+            <!-- Tambahkan produk lainnya di sini -->
+        </section>
+    </main>
+    <h2>Produk lainnya</h2>
+    <main id="home">
+        <section id="products">
+            <div class="product">
+                <img src="1.jpeg" alt="Produk 1">
+                <h3>Arwana Super Red</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="2.jpeg" alt="Produk 2">
+                <h3>Ikan KOI</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="3.jpeg" alt="Produk 3">
+                <h3>Ikan KOI</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="4.jpeg" alt="Produk 4">
+                <h3>Ikan KOI</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="5.jpeg" alt="Produk 5">
+                <h3>Ikan KOI</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="6.jpeg" alt="Produk 6">
+                <h3>Ikan KOI</h3>
+                <p>Harga: Rp 500.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="7.jpeg" alt="Produk 7">
+                <h3>Arwana Super Red</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="8.jpeg" alt="Produk 8">
+                <h3>Arwana Super Red</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="9.jpeg" alt="Produk 9">
+                <h3>Arwana Super Red</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="takari.jpeg" alt="Takari">
+                <h3>Takari</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <div class="product">
+                <img src="hoky.jpeg" alt="Hokky Louhan">
+                <h3>Arwana Super Red</h3>
+                <p>Harga: Rp 1.000.000</p>
+                <button type="button" class="btn btn-primary">beli</button>
+            </div>
+            <!-- Tambahkan produk lainnya di sini -->
+        </section>
+    </main>
+    <footer id="contact">
+        <p>Family Aquarium &copy;2024</p>
+        <!-- <img src="LOKASI.png" alt="lokasi" class="location"> -->
+    </footer>
+
+    <!-- Login Form -->
+    <div class="login-container" id="loginContainer" style="display:none;">
+        <form action="#" method="POST" class="login-form">
+            <h2 class="pp">Login</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <button type="button" id="cancelLogin">Batal</button>
+            <p>Belum punya akun? <a href="#" id="showRegister">Register</a></p>
+        </form>
+    </div>
+
+    <!-- Register Form -->
+    <div class="register-container" id="registerContainer" style="display:none;">
+        <form action="#" method="POST" class="register-form">
+            <h2 class="pp">Register</h2>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+            <button type="button" id="cancelRegister">Batal</button>
+            <p>Sudah punya akun? <a href="#" id="showLogin">Login</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("loginBtn").addEventListener("click", function() {
+            document.getElementById("loginContainer").style.display = "block";
+        });
+
+        document.getElementById("registerBtn").addEventListener("click", function() {
+            document.getElementById("registerContainer").style.display = "block";
+        });
+
+        document.getElementById("showRegister").addEventListener("click", function() {
+            document.getElementById("loginContainer").style.display = "none";
+            document.getElementById("registerContainer").style.display = "block";
+        });
+
+        document.getElementById("showLogin").addEventListener("click", function() {
+            document.getElementById("registerContainer").style.display = "none";
+            document.getElementById("loginContainer").style.display = "block";
+        });
+
+        document.getElementById("cancelLogin").addEventListener("click", function() {
+            document.getElementById("loginContainer").style.display = "none";
+        });
+
+        document.getElementById("cancelRegister").addEventListener("click", function() {
+            document.getElementById("registerContainer").style.display = "none";
+        });
+    </script>
+</body>
+</html>
