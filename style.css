@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(bg2ikn.png);
+    background-size: initial;
+    justify-content: center; 
+    background-position: center;
+}
+
+header {
+    background-color: #004080; /* Warna biru tua */
+    color: #fff;
+    padding: 20px 0;
+    overflow: hidden;
+    text-align: right;
+    width: auto;
+}
+header a{
+    margin-right: 20px;
+    text-align: right;
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar{
+    background-color: transparent;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(3, 50, 87); /* Warna biru tua */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+main {
+    padding: 20px;
+    display: flex; /* Mengatur konten di dalam <main> menjadi flex */
+    justify-content: center; /* Mengatur konten secara horizontal di tengah */
+}
+
+#products {
+    display: flex; /* Mengatur konten di dalam <section id="products"> menjadi flex */
+    flex-wrap: wrap; /* Mengatur konten agar dapat dibungkus ke baris berikutnya jika tidak cukup tempat */
+    justify-content: center; /* Mengatur konten secara horizontal di tengah */
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: calc(50% - 20px); /* Menyusun dua produk di setiap baris */
+    max-width: 300px; /* Batasi lebar maksimum produk */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #004080; /* Warna biru tua */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 100%;
+    bottom: 0;
+    width: 100%;
+}
+p{
+    margin-top: 5px;
+}
+h2{
+    position: relative; 
+    text-align: left;
+    left: 10px;
+    margin-top: 50px;
+    color: white;
+}
+.product button{
+    margin-top: 1px;
+    margin-bottom: 20px;
+}
+.login-container,
+.register-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang dengan opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow ringan */
+}
+
+.login-form,
+.register-form {
+    text-align: center;
+}
+
+.login-form h2,
+.register-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form input,
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button,
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004080; /* Warna biru tua */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover,
+.register-form button:hover {
+    background-color: #003366; /* Warna biru tua lebih gelap */
+}
+/* Tambahkan ini untuk memberikan jarak antara tombol */
+.login-form button,
+.register-form button,
+.login-form #cancelLogin,
+.register-form #cancelRegister {
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.login-form p,
+.register-form p {
+    margin-top: 10px;
+}
+h6 a{
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.location{
+    margin-top: 40px;
+    width: 40px;
+    margin-left: 10px;
+    display: flex;
+}
+.container-center {
+  display: flex;
+  justify-content: center;
+}
+.container-fluid{
+    justify-content: center;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    max-width: 80%;
+    justify-content: space-between;
+}
+.form-select {
+    width: 120px;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    background-color: yellow;
+    color: black;
+    appearance: none;
+    -webkit-appearance: none;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+  .form-select:focus {
+    outline: none;
+  }
+  
+  .form-select:after {
+    content: '\25BC';
+    position: absolute;
+    top: calc(100%-1px);
+    right: 5px;
+    /* transform: translateY(-50%); */
+    pointer-events: none;
+  }
+  
+  .form-select option {
+    background-color: white;
+    color: black;
+  }
+  .pp{
+    color:aliceblue;
+  }
+  .p1{
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+  }
+  .Tentang{
+    color: aliceblue;
+    font-weight: bold;
+  }
